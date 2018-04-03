@@ -1,0 +1,822 @@
+MpCCI server version 4.4.2 (64 bit double precision), Build Oct 16 2015, 03:25:38
+Started: Thu Dec 15 17:58:12 2016
+Command line arguments:
+   "-listen" "47010"
+   "-j" "LZHAOK6158CC3CE20B1CA87687596E7C45"
+   "-f" "mpccirun"
+   "-o" "1"
+   "-b" "4"
+   "-monitor" "47002@distance7.aoe.vt.edu" "C:\Users\lzhaok6\OneDrive\UNDEX research\MpCCI\Projects_and_tracefile\mpccirun.prop"
+
+[MpCCI License]: *** This MpCCI license will expire on 31-aug-2017.
+[MpCCI License]: (Virgina Polytechnic Institute and State University, USA, Kooperationslizenz, Maintenance end: Aug 31 2017)
+[MpCCI License]: 
+[MpCCI License]: *** mpcci_sessions: feature checkout...
+[MpCCI License]: *** mpcci_sessions: feature checked out.
+
+[MpCCI-SERVER]: *** Loading basic quantity information...
+
+[MpCCI-SERVER]: *** Writers home path: "C:\Users\lzhaok6\OneDrive\UNDEX research\MpCCI\Projects_and_tracefile".
+[MpCCI-SERVER]: *** Loaded writer library "writer_ccvx-64d.dll".
+   Version : "writer_ccvx, Version 4.4, 64 bit double precision, Build Oct 16 2015, 03:27:24"
+   Suffix  : "ccvx"
+   Config  : "orphans nodeids"
+   Jobdir  : "C:\Users\lzhaok6\OneDrive\UNDEX research\MpCCI\Projects_and_tracefile\mpccirun_20161215-175812_ccvx"
+   Format   : binary, plain, single file, no groups
+   Flush    : job closed
+   Midedge  : saved
+   Orphans  : saved
+   Nodeids  : saved
+   Elemids  : off
+   Elemsize : off
+   Globals  : off
+   Peaks    : off
+   INorm    : off
+   Parts    : deleted
+   Periodic : off
+[MpCCI-SERVER]: *** Loaded MON operator library "job_monitor-64d.dll".
+
+[MpCCi-SERVER]: *** Stopper signal thread now waiting on event "Global\MpCCI_server_stop_event_LZHAOK6158CC3CE20B1CA87687596E7C45".
+
+Accepting incoming connections on "47010@distance7"...
+[MpCCI License]: *** mpcci_adapter_mdnastran: feature test ...
+[MpCCI License]: *** mpcci_adapter_mdnastran: feature test done.
+[MpCCI License]: *** mpcci_clients: feature checkout...
+[MpCCI License]: *** mpcci_clients: feature checked out.
+Accepting incoming connections on "47010@distance7"...
+[MpCCI License]: *** mpcci_adapter_3dshock: feature test ...
+[MpCCI License]: *** mpcci_adapter_3dshock: feature test done.
+[MpCCI License]: *** mpcci_clients: feature checkout...
+[MpCCI License]: *** mpcci_clients: feature checked out.
+
+[MpCCI-SERVER]: *** Loading code specific mesh and quantity settings for code "MDNastran":
+
+   Code specific quantity properties:
+
+      "NPosition": Location(CODE), Default(0), Mesh(2)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "RelWallForce": Location(CODE), Default(0), Mesh(2)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "NPosition": Location(CODE), Default(0), Mesh(3)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "RelWallForce": Location(CODE), Default(0), Mesh(3)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "NPosition": Location(CODE), Default(0), Mesh(4)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "RelWallForce": Location(CODE), Default(0), Mesh(4)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "NPosition": Location(CODE), Default(0), Mesh(5)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "RelWallForce": Location(CODE), Default(0), Mesh(5)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "NPosition": Location(CODE), Default(0), Mesh(6)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "RelWallForce": Location(CODE), Default(0), Mesh(6)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+   Code specific parts properties:
+
+      "bottom"
+         Mesh ID: 2
+         Part ID: 3
+         Aux    : ""
+         Send   : "NPosition"
+         Receive: "RelWallForce"
+
+      "back"
+         Mesh ID: 3
+         Part ID: 1
+         Aux    : ""
+         Send   : "NPosition"
+         Receive: "RelWallForce"
+
+      "left"
+         Mesh ID: 4
+         Part ID: 2
+         Aux    : ""
+         Send   : "NPosition"
+         Receive: "RelWallForce"
+
+      "front"
+         Mesh ID: 5
+         Part ID: 4
+         Aux    : ""
+         Send   : "NPosition"
+         Receive: "RelWallForce"
+
+      "right"
+         Mesh ID: 6
+         Part ID: 5
+         Aux    : ""
+         Send   : "NPosition"
+         Receive: "RelWallForce"
+
+   Code specific globals properties:
+
+      "Time-Step-Size": GlobalId(1), Default(1), Aux("")
+         Receive: "DeltaTime"
+
+   Code specific mesh scale: 1
+
+   Code specific mesh transformation:
+                 1            0            0            0
+                 0            1            0            0
+                 0            0            1            0
+                 0            0            0            1
+      Det: 1
+
+
+[MpCCI-SERVER]: *** Loading code specific mesh and quantity settings for code "3Dbarge_Nastran_test":
+
+   Code specific quantity properties:
+
+      "NPosition": Location(NODE), Default(0), Mesh(2)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "RelWallForce": Location(NODE), Default(0), Mesh(2)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "NPosition": Location(NODE), Default(0), Mesh(3)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "RelWallForce": Location(NODE), Default(0), Mesh(3)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "NPosition": Location(NODE), Default(0), Mesh(4)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "RelWallForce": Location(NODE), Default(0), Mesh(4)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "NPosition": Location(NODE), Default(0), Mesh(5)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "RelWallForce": Location(NODE), Default(0), Mesh(5)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+      "NPosition": Location(NODE), Default(0), Mesh(6)
+         Send    : Method(0), Index(-1)
+         Receive : Method(0), Index(0)
+
+      "RelWallForce": Location(NODE), Default(0), Mesh(6)
+         Send    : Method(0), Index(0)
+         Receive : Method(0), Index(-1)
+
+   Code specific parts properties:
+
+      "wetsurface3"
+         Mesh ID: 2
+         Part ID: 3
+         Aux    : ""
+         Send   : "RelWallForce"
+         Receive: "NPosition"
+
+      "wetsurface1"
+         Mesh ID: 3
+         Part ID: 1
+         Aux    : ""
+         Send   : "RelWallForce"
+         Receive: "NPosition"
+
+      "wetsurface2"
+         Mesh ID: 4
+         Part ID: 2
+         Aux    : ""
+         Send   : "RelWallForce"
+         Receive: "NPosition"
+
+      "wetsurface4"
+         Mesh ID: 5
+         Part ID: 4
+         Aux    : ""
+         Send   : "RelWallForce"
+         Receive: "NPosition"
+
+      "wetsurface5"
+         Mesh ID: 6
+         Part ID: 5
+         Aux    : ""
+         Send   : "RelWallForce"
+         Receive: "NPosition"
+
+   Code specific globals properties:
+
+      "Time-Step-Size": GlobalId(1), Default(8.277e-006), Aux("")
+         Send   : "DeltaTime"
+
+   Code specific mesh scale: 1
+
+   Code specific mesh transformation:
+                 1            0            0            0
+                 0            1            0            0
+                 0            0            1            0
+                 0            0            0            1
+      Det: 1
+
+[MpCCI-SERVER]: *** Launching MpCCI monitor
+
+    "mpcci monitor -listen 47002"
+
+[MpCCI-SERVER]: *** Loaded ADJ operator library "adjuster-64d.dll".
+[MpCCI-SERVER]: *** Loaded REL operator library "rel_ml-64d.dll".
+[MpCCI-SERVER]: *** Loaded MAP operator library "map_ml-64d.dll".
+[MpCCI-SERVER]: *** Neighborhood relationship: "3Dbarge_Nastran_test/MESH-2" -> "MDNastran/MESH-2"
+[MpCCI License]: *** mpcci_operator_rel_ml: feature test ...
+[MpCCI License]: *** mpcci_operator_rel_ml: feature test done.
+[MpCCI-SERVER]: *** Relationship times: CPU(0.031 seconds), WCT(0.031 seconds), CPU/WCT(1.000).
+[MpCCI-SERVER]: *** Neighborhood relationship: "3Dbarge_Nastran_test/MESH-3" -> "MDNastran/MESH-3"
+    Childless elements  : 16 of 64 (25%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+[MpCCI-SERVER]: *** Neighborhood relationship: "3Dbarge_Nastran_test/MESH-4" -> "MDNastran/MESH-4"
+    Childless elements  : 8 of 32 (25%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+[MpCCI-SERVER]: *** Neighborhood relationship: "3Dbarge_Nastran_test/MESH-5" -> "MDNastran/MESH-5"
+    Childless elements  : 16 of 64 (25%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+[MpCCI-SERVER]: *** Neighborhood relationship: "3Dbarge_Nastran_test/MESH-6" -> "MDNastran/MESH-6"
+    Childless elements  : 8 of 32 (25%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+[MpCCI-SERVER]: *** Neighborhood relationship: "MDNastran/MESH-2" -> "3Dbarge_Nastran_test/MESH-2"
+    Childless elements  : 4985 of 5138 (97%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+[MpCCI-SERVER]: *** Neighborhood relationship: "MDNastran/MESH-3" -> "3Dbarge_Nastran_test/MESH-3"
+    Childless elements  : 12 of 80 (15%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+[MpCCI-SERVER]: *** Neighborhood relationship: "MDNastran/MESH-4" -> "3Dbarge_Nastran_test/MESH-4"
+    Childless elements  : 28 of 64 (44%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+[MpCCI-SERVER]: *** Neighborhood relationship: "MDNastran/MESH-5" -> "3Dbarge_Nastran_test/MESH-5"
+    Childless elements  : 12 of 80 (15%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+[MpCCI-SERVER]: *** Neighborhood relationship: "MDNastran/MESH-6" -> "3Dbarge_Nastran_test/MESH-6"
+    Childless elements  : 31 of 67 (46%)
+[MpCCI-SERVER]: *** Relationship times: Less than one microsecond.
+
+
+[MpCCI-SERVER]: *** Job information:
+   Interpolation order                 : Higher Order
+   Mesh motion transformation          : Disable
+   Mesh motion use initial relationship: Disable
+   MRF correction                      : Disable
+   Overlap check                       : Enable
+   Domain check                        : Disable
+   Baffle shift                        : Disable
+   Conformal mesh mapping              : Disable
+   Time tolerance                      : 0.001000
+
+
+Code/Mesh/Part/Quantities relationships:
+
+Code: "MDNastran", ID(0), nice(64), clients(1), type(Finite Element).
+
+   Global: "Time-Step-Size", gid(1)
+         Quantity  : DeltaTime
+         Direction : RECV
+         Default   : 1
+
+   Mesh: "MDNastran/MESH-2", mid(2)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 5295
+       Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. -0.9144] [-2.4384 .. 2.4384]
+       NElements     : 5138
+       Total nodeids : 20552
+       Total vertices: 20552
+       Distances     : [0.0381 .. 0.137372]
+       Mean distance : 0.107574
+       Domain size   : 41.6206
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "NPosition"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+
+       Recv: "RelWallForce"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+           Source    : "3Dbarge_Nastran_test/MESH-2" -> rel_ml -> map_ml
+           Adjuster  : adjuster
+
+       Part: "MDNastran/MESH-2/bottom", pid(3) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 5295
+           Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. -0.9144] [-2.4384 .. 2.4384]
+           NElements     : 5138
+           Common type   : QUAD4
+           Total nodeids : 20552
+           Total vertices: 20552
+           Distances     : [0.0381 .. 0.137372]
+           Mean distance : 0.107574
+           Domain size   : 41.6206
+
+   Mesh: "MDNastran/MESH-3", mid(3)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 105
+       Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. 1.85e-008] [-2.4384 .. -2.4384]
+       NElements     : 80
+       Total nodeids : 320
+       Total vertices: 320
+       Distances     : [0.2286 .. 0.511165]
+       Mean distance : 0.398383
+       Domain size   : 7.80386
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "NPosition"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+
+       Recv: "RelWallForce"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+           Source    : "3Dbarge_Nastran_test/MESH-3" -> rel_ml -> map_ml
+           Adjuster  : adjuster
+
+       Part: "MDNastran/MESH-3/back", pid(1) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 105
+           Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. 1.85e-008] [-2.4384 .. -2.4384]
+           NElements     : 80
+           Common type   : QUAD4
+           Total nodeids : 320
+           Total vertices: 320
+           Distances     : [0.2286 .. 0.511165]
+           Mean distance : 0.398383
+           Domain size   : 7.80386
+
+   Mesh: "MDNastran/MESH-4", mid(4)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 85
+       Bounding box  : [-4.2672 .. -4.2672] [-0.9144 .. 1.85e-008] [-2.4384 .. 2.4384]
+       NElements     : 64
+       Total nodeids : 256
+       Total vertices: 256
+       Distances     : [0.2286 .. 0.381]
+       Mean distance : 0.311085
+       Domain size   : 4.45935
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "NPosition"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+
+       Recv: "RelWallForce"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+           Source    : "3Dbarge_Nastran_test/MESH-4" -> rel_ml -> map_ml
+           Adjuster  : adjuster
+
+       Part: "MDNastran/MESH-4/left", pid(2) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 85
+           Bounding box  : [-4.2672 .. -4.2672] [-0.9144 .. 1.85e-008] [-2.4384 .. 2.4384]
+           NElements     : 64
+           Common type   : QUAD4
+           Total nodeids : 256
+           Total vertices: 256
+           Distances     : [0.2286 .. 0.381]
+           Mean distance : 0.311085
+           Domain size   : 4.45935
+
+   Mesh: "MDNastran/MESH-5", mid(5)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 105
+       Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. 1.85e-008] [2.4384 .. 2.4384]
+       NElements     : 80
+       Total nodeids : 320
+       Total vertices: 320
+       Distances     : [0.2286 .. 0.511165]
+       Mean distance : 0.398383
+       Domain size   : 7.80386
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "NPosition"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+
+       Recv: "RelWallForce"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+           Source    : "3Dbarge_Nastran_test/MESH-5" -> rel_ml -> map_ml
+           Adjuster  : adjuster
+
+       Part: "MDNastran/MESH-5/front", pid(4) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 105
+           Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. 1.85e-008] [2.4384 .. 2.4384]
+           NElements     : 80
+           Common type   : QUAD4
+           Total nodeids : 320
+           Total vertices: 320
+           Distances     : [0.2286 .. 0.511165]
+           Mean distance : 0.398383
+           Domain size   : 7.80386
+
+   Mesh: "MDNastran/MESH-6", mid(6)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 90
+       Bounding box  : [4.2672 .. 4.2672] [-0.9144 .. 1.85e-008] [-2.4384 .. 2.4384]
+       NElements     : 67
+       Total nodeids : 268
+       Total vertices: 268
+       Distances     : [0.1143 .. 0.381]
+       Mean distance : 0.304041
+       Domain size   : 4.45935
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "NPosition"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+
+       Recv: "RelWallForce"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 4
+           Source    : "3Dbarge_Nastran_test/MESH-6" -> rel_ml -> map_ml
+           Adjuster  : adjuster
+
+       Part: "MDNastran/MESH-6/right", pid(5) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 90
+           Bounding box  : [4.2672 .. 4.2672] [-0.9144 .. 1.85e-008] [-2.4384 .. 2.4384]
+           NElements     : 67
+           Common type   : QUAD4
+           Total nodeids : 268
+           Total vertices: 268
+           Distances     : [0.1143 .. 0.381]
+           Mean distance : 0.304041
+           Domain size   : 4.45935
+
+Code: "3Dbarge_Nastran_test", ID(1), nice(64), clients(1), type(Finite Element).
+
+   Global: "Time-Step-Size", gid(1)
+         Quantity  : DeltaTime
+         Direction : SEND
+         Default   : 8.277e-006
+
+   Mesh: "3Dbarge_Nastran_test/MESH-2", mid(2)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 153
+       Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. -0.9144] [-2.4384 .. 2.4384]
+       NElements     : 128
+       Total nodeids : 512
+       Total vertices: 512
+       Distances     : [0.5334 .. 0.810017]
+       Mean distance : 0.661376
+       Domain size   : 41.6206
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "RelWallForce"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+
+       Recv: "NPosition"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+           Source    : "MDNastran/MESH-2" -> rel_ml -> map_ml
+
+       Part: "3Dbarge_Nastran_test/MESH-2/wetsurface3", pid(2) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 153
+           Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. -0.9144] [-2.4384 .. 2.4384]
+           NElements     : 128
+           Common type   : QUAD4
+           Total nodeids : 512
+           Total vertices: 512
+           Distances     : [0.5334 .. 0.810017]
+           Mean distance : 0.661376
+           Domain size   : 41.6206
+
+   Mesh: "3Dbarge_Nastran_test/MESH-3", mid(3)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 85
+       Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. -0] [-2.4384 .. -2.4384]
+       NElements     : 64
+       Total nodeids : 256
+       Total vertices: 256
+       Distances     : [0.2286 .. 0.580322]
+       Mean distance : 0.473831
+       Domain size   : 7.80386
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "RelWallForce"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+
+       Recv: "NPosition"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+           Source    : "MDNastran/MESH-3" -> rel_ml -> map_ml
+
+       Part: "3Dbarge_Nastran_test/MESH-3/wetsurface1", pid(0) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 85
+           Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. -0] [-2.4384 .. -2.4384]
+           NElements     : 64
+           Common type   : QUAD4
+           Total nodeids : 256
+           Total vertices: 256
+           Distances     : [0.2286 .. 0.580322]
+           Mean distance : 0.473831
+           Domain size   : 7.80386
+
+   Mesh: "3Dbarge_Nastran_test/MESH-4", mid(4)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 45
+       Bounding box  : [-4.2672 .. -4.2672] [-0.9144 .. -0] [-2.4384 .. 2.4384]
+       NElements     : 32
+       Total nodeids : 128
+       Total vertices: 128
+       Distances     : [0.2286 .. 0.651053]
+       Mean distance : 0.531583
+       Domain size   : 4.45935
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "RelWallForce"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+
+       Recv: "NPosition"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+           Source    : "MDNastran/MESH-4" -> rel_ml -> map_ml
+
+       Part: "3Dbarge_Nastran_test/MESH-4/wetsurface2", pid(1) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 45
+           Bounding box  : [-4.2672 .. -4.2672] [-0.9144 .. -0] [-2.4384 .. 2.4384]
+           NElements     : 32
+           Common type   : QUAD4
+           Total nodeids : 128
+           Total vertices: 128
+           Distances     : [0.2286 .. 0.651053]
+           Mean distance : 0.531583
+           Domain size   : 4.45935
+
+   Mesh: "3Dbarge_Nastran_test/MESH-5", mid(5)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 85
+       Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. -0] [2.4384 .. 2.4384]
+       NElements     : 64
+       Total nodeids : 256
+       Total vertices: 256
+       Distances     : [0.2286 .. 0.580322]
+       Mean distance : 0.473831
+       Domain size   : 7.80386
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "RelWallForce"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+
+       Recv: "NPosition"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+           Source    : "MDNastran/MESH-5" -> rel_ml -> map_ml
+
+       Part: "3Dbarge_Nastran_test/MESH-5/wetsurface4", pid(3) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 85
+           Bounding box  : [-4.2672 .. 4.2672] [-0.9144 .. -0] [2.4384 .. 2.4384]
+           NElements     : 64
+           Common type   : QUAD4
+           Total nodeids : 256
+           Total vertices: 256
+           Distances     : [0.2286 .. 0.580322]
+           Mean distance : 0.473831
+           Domain size   : 7.80386
+
+   Mesh: "3Dbarge_Nastran_test/MESH-6", mid(6)
+       Coord system  : 3D
+       Mesh type     : FACE
+       NNodes        : 45
+       Bounding box  : [4.2672 .. 4.2672] [-0.9144 .. -0] [-2.4384 .. 2.4384]
+       NElements     : 32
+       Total nodeids : 128
+       Total vertices: 128
+       Distances     : [0.2286 .. 0.651053]
+       Mean distance : 0.531583
+       Domain size   : 4.45935
+       Domain count  : ** NOT AVAILABLE **
+
+       Send: "RelWallForce"
+           Dimension : 3
+           Direction : SEND
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+
+       Recv: "NPosition"
+           Dimension : 3
+           Direction : RECV
+           Location  : node
+           Default   : 0
+           Buffers   : 1
+           Source    : "MDNastran/MESH-6" -> rel_ml -> map_ml
+
+       Part: "3Dbarge_Nastran_test/MESH-6/wetsurface5", pid(4) state(RUN)
+           Coord system  : 3D
+           Mesh type     : FACE
+           NNodes        : 45
+           Bounding box  : [4.2672 .. 4.2672] [-0.9144 .. -0] [-2.4384 .. 2.4384]
+           NElements     : 32
+           Common type   : QUAD4
+           Total nodeids : 128
+           Total vertices: 128
+           Distances     : [0.2286 .. 0.651053]
+           Mean distance : 0.531583
+           Domain size   : 4.45935
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-2/RelWallForce(bid=0)" -> "MDNastran/MESH-2/RelWallForce(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-2/RelWallForce": [N]
+    X: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Y: Source(       382681), Target(       382681), Diff(   0.00411376), Error(+0.000%)
+    Z: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-3/RelWallForce(bid=0)" -> "MDNastran/MESH-3/RelWallForce(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-3/RelWallForce": [N]
+    X: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(      35876.4), Target(      35876.4), Diff(  -0.00118354), Error(-0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-4/RelWallForce(bid=0)" -> "MDNastran/MESH-4/RelWallForce(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-4/RelWallForce": [N]
+    X: Source(      20500.8), Target(      20500.8), Diff( -0.000389951), Error(-0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-5/RelWallForce(bid=0)" -> "MDNastran/MESH-5/RelWallForce(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-5/RelWallForce": [N]
+    X: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(     -35876.4), Target(     -35876.4), Diff(   0.00118354), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-6/RelWallForce(bid=0)" -> "MDNastran/MESH-6/RelWallForce(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-6/RelWallForce": [N]
+    X: Source(     -20500.8), Target(     -20500.8), Diff(  0.000391616), Error(+0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-2/NPosition(bid=0)" -> "3Dbarge_Nastran_test/MESH-2/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-3/NPosition(bid=0)" -> "3Dbarge_Nastran_test/MESH-3/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-4/NPosition(bid=0)" -> "3Dbarge_Nastran_test/MESH-4/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-5/NPosition(bid=0)" -> "3Dbarge_Nastran_test/MESH-5/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-6/NPosition(bid=0)" -> "3Dbarge_Nastran_test/MESH-6/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-2/RelWallForce(bid=0)" -> "MDNastran/MESH-2/RelWallForce(bid=1)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-2/RelWallForce": [N]
+    X: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Y: Source( 2.17062e+006), Target( 2.17789e+006), Diff(      7278.64), Error(+0.335%)
+    Z: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-3/RelWallForce(bid=0)" -> "MDNastran/MESH-3/RelWallForce(bid=1)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-3/RelWallForce": [N]
+    X: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(      35876.4), Target(      35876.4), Diff(  -0.00118622), Error(-0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-4/RelWallForce(bid=0)" -> "MDNastran/MESH-4/RelWallForce(bid=1)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-4/RelWallForce": [N]
+    X: Source(      20500.8), Target(      20500.8), Diff( -0.000394072), Error(-0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-5/RelWallForce(bid=0)" -> "MDNastran/MESH-5/RelWallForce(bid=1)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-5/RelWallForce": [N]
+    X: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(      -630028), Target(      -661503), Diff(     -31475.2), Error(-4.996%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-6/RelWallForce(bid=0)" -> "MDNastran/MESH-6/RelWallForce(bid=1)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-6/RelWallForce": [N]
+    X: Source(     -20500.8), Target(     -20500.8), Diff(  0.000397669), Error(+0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-2/NPosition(bid=1)" -> "3Dbarge_Nastran_test/MESH-2/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-3/NPosition(bid=1)" -> "3Dbarge_Nastran_test/MESH-3/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-4/NPosition(bid=1)" -> "3Dbarge_Nastran_test/MESH-4/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-5/NPosition(bid=1)" -> "3Dbarge_Nastran_test/MESH-5/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "MDNastran/MESH-6/NPosition(bid=1)" -> "3Dbarge_Nastran_test/MESH-6/NPosition(bid=0)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-2/RelWallForce(bid=0)" -> "MDNastran/MESH-2/RelWallForce(bid=2)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-2/RelWallForce": [N]
+    X: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Y: Source( 3.32349e+006), Target(  3.3289e+006), Diff(      5407.76), Error(+0.163%)
+    Z: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-3/RelWallForce(bid=0)" -> "MDNastran/MESH-3/RelWallForce(bid=2)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-3/RelWallForce": [N]
+    X: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(        35831), Target(      35831.1), Diff(    0.0364358), Error(+0.000%)
+[MpCCI-SERVER]: *** Mapping quantity "3Dbarge_Nastran_test/MESH-4/RelWallForce(bid=0)" -> "MDNastran/MESH-4/RelWallForce(bid=2)"
+[MpCCI-SERVER]: *** Mapping times: Less than one microsecond.
+[MpCCI-SERVER]: *** Global mapping deviation for quantity "MDNastran/MESH-4/RelWallForce": [N]
+    X: Source(      20438.8), Target(      20438.8), Diff( -0.000406895), Error(-0.000%)
+    Y: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
+    Z: Source(            0), Target(            0), Diff(            0), Error(+0.000%)
